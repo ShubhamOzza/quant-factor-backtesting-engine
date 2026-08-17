@@ -1,0 +1,6 @@
+# Project I-5: Cross-Sectional Factor Backtesting Engine
+# Core scientific stack only; no backtesting library is used by design.
+# Pinned to the exact versions this script was tested against for reproducibility.
+numpy==2.4.2
+pandas==2.2.3
+matplotlib==3.10.8

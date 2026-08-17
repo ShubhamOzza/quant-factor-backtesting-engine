@@ -1,0 +1,192 @@
+[data] SYNTHETIC DEMO MODE: generating artificial data. Results are a mechanics demonstration, not market evidence.
+[data] panel rows: 2,096,640; tickers: 520; dates: 4032
+[universe] 175 formation dates; universe size 500
+[factors] Value factor in use: earnings_yield (lagged 6 months).
+
+[metrics] gross and net performance by book:
+                    ann_return  ann_vol  sharpe  sortino  max_drawdown  calmar  hit_rate  total_growth  n_days
+book         curve                                                                                            
+decile_1     gross      0.0692   0.1698  0.4789   0.6799       -0.4232  0.1635    0.5199        2.7219    3772
+             net        0.0636   0.1698  0.4481   0.6244       -0.4290  0.1483    0.5191        2.5174    3772
+decile_2     gross      0.0554   0.1691  0.4035   0.5532       -0.4953  0.1119    0.5114        2.2418    3772
+             net        0.0442   0.1692  0.3401   0.4399       -0.5056  0.0874    0.5103        1.9101    3772
+decile_3     gross      0.0958   0.1704  0.6220   0.9489       -0.4000  0.2394    0.5164        3.9303    3772
+             net        0.0815   0.1705  0.5445   0.8040       -0.4151  0.1962    0.5146        3.2286    3772
+decile_4     gross      0.0750   0.1708  0.5086   0.7415       -0.4288  0.1748    0.5122        2.9506    3772
+             net        0.0594   0.1709  0.4229   0.5851       -0.4459  0.1332    0.5106        2.3710    3772
+decile_5     gross      0.1173   0.1692  0.7401   1.1823       -0.3599  0.3258    0.5154        5.2576    3772
+             net        0.1006   0.1693  0.6507   1.0099       -0.3784  0.2658    0.5133        4.1964    3772
+decile_6     gross      0.1423   0.1672  0.8795   1.4469       -0.3991  0.3566    0.5188        7.3260    3772
+             net        0.1250   0.1673  0.7875   1.2656       -0.4167  0.2999    0.5172        5.8272    3772
+decile_7     gross      0.1145   0.1677  0.7303   1.1578       -0.4309  0.2658    0.5252        5.0676    3772
+             net        0.0977   0.1679  0.6394   0.9834       -0.4478  0.2182    0.5231        4.0367    3772
+decile_8     gross      0.1370   0.1689  0.8448   1.3640       -0.3870  0.3541    0.5228        6.8359    3772
+             net        0.1210   0.1691  0.7601   1.1995       -0.4039  0.2995    0.5212        5.5244    3772
+decile_9     gross      0.1752   0.1694  1.0382   1.7586       -0.3476  0.5040    0.5223       11.2058    3772
+             net        0.1613   0.1694  0.9676   1.6156       -0.3631  0.4443    0.5207        9.3822    3772
+decile_10    gross      0.2217   0.1721  1.2500   2.1937       -0.3270  0.6779    0.5382       20.0198    3772
+             net        0.2145   0.1721  1.2159   2.1195       -0.3344  0.6416    0.5371       18.3462    3772
+long_short   gross      0.1382   0.0771  1.7184   3.0594       -0.0786  1.7580    0.5467        6.9388    3772
+             net        0.1254   0.0771  1.5711   2.7658       -0.0807  1.5541    0.5429        5.8581    3772
+long_only    gross      0.2217   0.1721  1.2500   2.1937       -0.3270  0.6779    0.5382       20.0198    3772
+             net        0.2145   0.1721  1.2159   2.1195       -0.3344  0.6416    0.5371       18.3462    3772
+benchmark_ew gross      0.1207   0.1624  0.7827   1.2590       -0.3906  0.3090    0.5228        5.5030    3772
+             net        0.1195   0.1624  0.7762   1.2464       -0.3917  0.3050    0.5228        5.4163    3772
+
+[turnover] average per rebalance (fraction of NAV):
+              avg_one_way_per_rebalance  avg_two_way_per_rebalance
+book                                                              
+benchmark_ew                     0.0456                     0.0912
+decile_1                         0.2242                     0.4484
+decile_10                        0.2508                     0.5016
+decile_2                         0.4598                     0.9195
+decile_3                         0.5641                     1.1283
+decile_4                         0.6276                     1.2552
+decile_5                         0.6471                     1.2943
+decile_6                         0.6571                     1.3142
+decile_7                         0.6529                     1.3059
+decile_8                         0.6114                     1.2228
+decile_9                         0.5100                     1.0200
+long_only                        0.2508                     0.5016
+long_short                       0.4867                     0.9733
+
+[capacity] rough order-of-magnitude capacity estimate (NOT a market-impact model):
+            median_adv_dollar  n_names_in_book  avg_two_way_turnover_per_rebalance  participation_rate_assumed  capacity_estimate_usd
+book                                                                                                                                 
+long_short       4.619196e+08              100                                0.97                        0.05           2.372837e+09
+long_only        4.619196e+08               50                                0.50                        0.05           2.302198e+09
+
+[diagnostics] rank IC summary:
+          series  mean_ic  ic_std  ic_ir  pct_positive  n_periods
+composite_signal   0.0322   0.048 0.6705        0.7052        173
+
+[diagnostics] decile monotonicity (Spearman decile vs mean fwd return): 0.879
+
+[diagnostics] factor decay:
+             series  mean_ic  ic_std   ic_ir  pct_positive  n_periods
+horizon_days                                                         
+21              21d   0.0322  0.0480  0.6705        0.7052        173
+63              63d   0.0538  0.0504  1.0679        0.9064        171
+126            126d   0.0807  0.0494  1.6317        0.9583        168
+252            252d   0.1146  0.0542  2.1159        0.9815        162
+
+[diagnostics] mean rank autocorrelation: 0.951
+
+[robustness] running formation-window perturbations, cost sensitivity, sample splits, and regime breakdown...
+[factors] Value factor in use: earnings_yield (lagged 6 months).
+[factors] Value factor in use: earnings_yield (lagged 6 months).
+[factors] Value factor in use: earnings_yield (lagged 6 months).
+               lookback  skip  ann_return_net  sharpe_net  max_drawdown_net
+variant                                                                    
+mom_9_1             189    21          0.1386      1.7387           -0.1049
+mom_12_1_base       252    21          0.1254      1.5711           -0.0807
+mom_12_3            252    63          0.1309      1.6323           -0.1181
+                 ann_return_net  sharpe_net
+cost_bps_oneway                            
+0.0                      0.1382      1.7184
+5.0                      0.1317      1.6451
+10.0                     0.1254      1.5711
+20.0                     0.1127      1.4213
+                                    ann_return_net  sharpe_net  max_drawdown_net
+sample                book                                                      
+validation_first_half long_short            0.1193      1.4889           -0.0807
+                      long_only             0.1310      0.8053           -0.3344
+                      benchmark_ew          0.0410      0.3284           -0.3917
+test_second_half      long_short            0.1314      1.6549           -0.0806
+                      long_only             0.3042      1.6230           -0.2003
+                      benchmark_ew          0.2039      1.2256           -0.2268
+                                       ann_return_net  ann_vol_net  sharpe_net
+regime                   book                                                 
+2010-12-31 to 2014-08-12 long_short            0.1256       0.0802      1.5158
+                         long_only             0.1872       0.1718      1.0855
+                         benchmark_ew          0.0757       0.1618      0.5320
+2014-08-13 to 2018-03-23 long_short            0.1131       0.0753      1.4619
+                         long_only             0.0775       0.1704      0.5233
+                         benchmark_ew          0.0074       0.1633      0.1269
+2018-03-26 to 2021-11-03 long_short            0.1828       0.0752      2.2703
+                         long_only             0.4315       0.1769      2.1182
+                         benchmark_ew          0.2747       0.1655      1.5496
+2021-11-04 to 2025-06-16 long_short            0.0823       0.0775      1.0596
+                         long_only             0.1882       0.1687      1.1068
+                         benchmark_ew          0.1371       0.1587      0.8889
+
+[robustness] calendar-year breakdown (net):
+                   ann_return_net  ann_vol_net  sharpe_net  max_drawdown_net  n_days
+year book                                                                           
+2011 long_short            0.1376       0.0814      1.6252           -0.0728     260
+     long_only             0.3287       0.1769      1.6960           -0.0992     260
+     benchmark_ew          0.1928       0.1644      1.1552           -0.1099     260
+2012 long_short            0.1146       0.0796      1.4032           -0.0329     261
+     long_only            -0.0209       0.1687     -0.0408           -0.1993     261
+     benchmark_ew         -0.0938       0.1610     -0.5313           -0.2446     261
+2013 long_short            0.1039       0.0809      1.2623           -0.0807     261
+     long_only             0.1597       0.1613      0.9996           -0.1661     261
+     benchmark_ew          0.0780       0.1593      0.5514           -0.1599     261
+2014 long_short            0.2067       0.0790      2.4177           -0.0458     261
+     long_only             0.3324       0.1827      1.6628           -0.1278     261
+     benchmark_ew          0.1590       0.1647      0.9784           -0.1450     261
+2015 long_short            0.1993       0.0732      2.5186           -0.0418     261
+     long_only             0.2794       0.1887      1.4010           -0.1027     261
+     benchmark_ew          0.1392       0.1750      0.8322           -0.1248     261
+2016 long_short            0.0194       0.0803      0.2794           -0.0652     261
+     long_only            -0.0354       0.1630     -0.1393           -0.1348     261
+     benchmark_ew         -0.1201       0.1597     -0.7211           -0.1777     261
+2017 long_short            0.0710       0.0728      0.9783           -0.0288     260
+     long_only            -0.1633       0.1569     -1.0574           -0.2506     260
+     benchmark_ew         -0.1349       0.1551     -0.8561           -0.2425     260
+2018 long_short            0.1680       0.0656      2.3986           -0.0442     261
+     long_only             0.6034       0.1703      2.8592           -0.0824     261
+     benchmark_ew          0.4513       0.1648      2.3440           -0.0940     261
+2019 long_short            0.1104       0.0738      1.4554           -0.0711     261
+     long_only             0.4033       0.1778      1.9961           -0.1551     261
+     benchmark_ew          0.2933       0.1675      1.6196           -0.1899     261
+2020 long_short            0.1639       0.0789      1.9635           -0.0806     262
+     long_only             0.4337       0.1787      2.1071           -0.0853     262
+     benchmark_ew          0.2566       0.1633      1.4813           -0.0861     262
+2021 long_short            0.2027       0.0810      2.3208           -0.0569     261
+     long_only             0.4673       0.1697      2.3456           -0.0669     261
+     benchmark_ew          0.3069       0.1578      1.7753           -0.0680     261
+2022 long_short            0.1632       0.0798      1.9346           -0.0525     260
+     long_only             0.0807       0.1610      0.5626           -0.1413     260
+     benchmark_ew          0.0525       0.1535      0.4101           -0.1512     260
+2023 long_short            0.1002       0.0777      1.2674           -0.0740     260
+     long_only             0.5183       0.1691      2.5559           -0.0555     260
+     benchmark_ew          0.4451       0.1629      2.3426           -0.0730     260
+2024 long_short            0.0280       0.0742      0.4093           -0.0564     262
+     long_only            -0.0228       0.1833     -0.0343           -0.1623     262
+     benchmark_ew         -0.0793       0.1652     -0.4177           -0.1828     262
+2025 long_short            0.1005       0.0731      1.3473           -0.0355     119
+     long_only             0.1234       0.1527      0.8386           -0.0768     119
+     benchmark_ew          0.0267       0.1486      0.2516           -0.0792     119
+
+[robustness] bucket count and weighting scheme:
+                           n_buckets    weighting  ann_return_net  sharpe_net  max_drawdown_net
+variant                                                                                        
+decile_equal_weight               10        equal          0.1254      1.5711           -0.0807
+quintile_equal_weight              5        equal          0.1171      2.0988           -0.0621
+decile_vol_inverse_weight         10  vol_inverse          0.1355      1.7678           -0.0761
+
+[robustness] rebalance frequency vs turnover:
+            n_formation_dates  avg_two_way_turnover_per_rebalance  ann_return_net  sharpe_net
+rebalance                                                                                    
+monthly                   175                              0.9733          0.1254      1.5711
+quarterly                  59                              1.6175          0.1289      1.5923
+semiannual                 30                              2.1555          0.1586      1.8439
+
+[robustness] negative control: shuffling the signal cross-sectionally (5 independent draws) and rerunning the backtest...
+  real signal: mean IC 0.0322, long-short net Sharpe 1.5711
+  shuffled signal (pooled over 5 draws): mean IC -0.0020 (t-stat -1.24), average long-short net Sharpe -0.8352 (per-draw: [-0.6383, -1.0194, -1.1051, -0.371, -1.042])
+  PASS  negative_control: the shuffled signal's pooled IC is statistically indistinguishable from zero (|t| = 1.24 < 2), as expected for a leak-free engine. Per-draw Sharpe values vary with sampling noise, which is itself the point: a genuine signal is stable across shuffles, a placebo is not.
+
+[checks] running point-in-time timing audit and accounting cross-checks...
+  PASS  weights_feasible: True
+  PASS  no_position_before_signal: True
+  PASS  returns_finite: True
+  PASS  costs_reduce_performance: True
+  PASS  ew_benchmark_crosscheck_corr: 1.0
+  PASS  ew_benchmark_crosscheck_growth_gap: 0.00114
+  PASS  hand_check_pnl: 
+  hand-check detail: {'execution_date': '2011-02-01', 'formation_date': '2011-01-31', 'n_long_names': 50, 'n_short_names': 50, 'long_weight_sum': 1.0, 'short_weight_sum': -1.0, 'engine_gross_ret': -0.0002145337944429171, 'engine_net_ret': -0.001155877990125584, 'implied_cost': 0.0009413441956826669, 'hand_oc_pnl': 0.0004200088686393778, 'engine_oc_pnl': 0.0004200088686393778, 'turnover_two_way': 0.9413441956826668}
+
+[output] all results written to: results/
+[output] REMINDER: these results come from synthetic data and are a mechanics demonstration only.

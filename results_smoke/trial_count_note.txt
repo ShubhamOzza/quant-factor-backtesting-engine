@@ -1,0 +1,5 @@
+TRIAL COUNT AND MULTIPLE TESTING NOTE
+=====================================
+This run evaluated approximately 15 strategy variants (3 formation-window perturbations, 4 cost levels, 2 sample halves, 3 bucket-count/weighting variants, 3 rebalance-frequency variants; the calendar-year table and other diagnostics are descriptive, not selected).
+All variants are reported in full. No variant was selected ex post for presentation; the headline configuration is the canonical 12-1 momentum plus 6-month-lagged earnings yield composite at 10 bps one-way cost, fixed ex ante.
+When interpreting t-statistics, remember that screening many variants inflates the false-discovery risk; treat any single result with the skepticism appropriate to the trial count.

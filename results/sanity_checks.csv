@@ -1,0 +1,8 @@
+,0
+weights_feasible,True
+no_position_before_signal,True
+returns_finite,True
+costs_reduce_performance,True
+ew_benchmark_crosscheck_corr,1.0
+ew_benchmark_crosscheck_growth_gap,0.00114
+hand_check_pnl,"{'execution_date': '2011-02-01', 'formation_date': '2011-01-31', 'n_long_names': 50, 'n_short_names': 50, 'long_weight_sum': 1.0, 'short_weight_sum': -1.0, 'engine_gross_ret': -0.0002145337944429171, 'engine_net_ret': -0.001155877990125584, 'implied_cost': 0.0009413441956826669, 'hand_oc_pnl': 0.0004200088686393778, 'engine_oc_pnl': 0.0004200088686393778, 'turnover_two_way': 0.9413441956826668}"
